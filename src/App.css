@@ -13,7 +13,7 @@ body, html, #root {
   align-items: center;
   overflow: hidden;
   position: relative;
-  background-image: url('/Users/ashruti/fun-or-die/public/images/fuji.png');
+  /* background-image: url('/Users/ashruti/fun-or-die/public/images/fuji.png'); */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -110,7 +110,7 @@ h1 {
   margin-bottom: 6px;
 }
 
-.app-icon:hover::after {
+/* .app-icon:hover::after {
   content: "Draw and guess with friends!";
   font-size: 0.7rem;
   position: absolute;
@@ -118,7 +118,7 @@ h1 {
   background: rgba(0, 0, 0, 0.6);
   padding: 4px 8px;
   border-radius: 6px;
-}
+} */
 
 @keyframes disco {
   0% { background-color: #ff6699; }

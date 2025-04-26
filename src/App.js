@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import fujiImage from './images/fuji.png';
 
 function App() {
   const [disco, setDisco] = useState(false);
@@ -11,8 +12,24 @@ function App() {
   
 
   return (
-    <div className="App">
-      {/* 👇 new layer behind everything */}
+<div
+  className="App"
+  style={{
+    backgroundImage: `url(${fujiImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height: "100vh",
+    width: "100vw",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",  // ← THIS centers everything vertically
+    fontFamily: "sans-serif",
+  }}
+>
+  <div className="content-wrapper" style={{ textAlign: "center" }}>
+    {/* your app icons, folder, etc. */}
+  </div>
       {disco && <div className="disco-background" />}
       
       <div className="folder-wrapper">
